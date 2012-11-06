@@ -21,7 +21,7 @@
 		0324D8841649972C00ED99D8 /* ETLoginInfoXMLParser.m in Sources */ = {isa = PBXBuildFile; fileRef = 0324D8831649972C00ED99D8 /* ETLoginInfoXMLParser.m */; };
 		0324D8871649978A00ED99D8 /* ETLoginInfo.m in Sources */ = {isa = PBXBuildFile; fileRef = 0324D8861649978A00ED99D8 /* ETLoginInfo.m */; };
 		0324D89016499FC400ED99D8 /* login_response.xml in Resources */ = {isa = PBXBuildFile; fileRef = 0324D88F16499FC400ED99D8 /* login_response.xml */; };
-		0324D8921649A35F00ED99D8 /* README.md in Resources */ = {isa = PBXBuildFile; fileRef = 0324D8911649A35F00ED99D8 /* README.md */; };
+		0324D8941649A48800ED99D8 /* README.md in Resources */ = {isa = PBXBuildFile; fileRef = 0324D8931649A48800ED99D8 /* README.md */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
@@ -46,7 +46,7 @@
 		0324D8851649978A00ED99D8 /* ETLoginInfo.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = ETLoginInfo.h; sourceTree = "<group>"; };
 		0324D8861649978A00ED99D8 /* ETLoginInfo.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = ETLoginInfo.m; sourceTree = "<group>"; };
 		0324D88F16499FC400ED99D8 /* login_response.xml */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text.xml; path = login_response.xml; sourceTree = "<group>"; };
-		0324D8911649A35F00ED99D8 /* README.md */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text; path = README.md; sourceTree = "<group>"; };
+		0324D8931649A48800ED99D8 /* README.md */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text; path = README.md; sourceTree = SOURCE_ROOT; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -93,6 +93,7 @@
 		0324D85F164996D800ED99D8 /* ETXMLParseSOExample */ = {
 			isa = PBXGroup;
 			children = (
+				0324D8931649A48800ED99D8 /* README.md */,
 				0324D868164996D800ED99D8 /* ETAppDelegate.h */,
 				0324D869164996D800ED99D8 /* ETAppDelegate.m */,
 				0324D871164996D800ED99D8 /* ETViewController.h */,
@@ -103,7 +104,6 @@
 				0324D8861649978A00ED99D8 /* ETLoginInfo.m */,
 				0324D874164996D800ED99D8 /* ETViewController.xib */,
 				0324D88F16499FC400ED99D8 /* login_response.xml */,
-				0324D8911649A35F00ED99D8 /* README.md */,
 				0324D860164996D800ED99D8 /* Supporting Files */,
 			);
 			path = ETXMLParseSOExample;
@@ -181,7 +181,7 @@
 				0324D870164996D800ED99D8 /* Default-568h@2x.png in Resources */,
 				0324D876164996D800ED99D8 /* ETViewController.xib in Resources */,
 				0324D89016499FC400ED99D8 /* login_response.xml in Resources */,
-				0324D8921649A35F00ED99D8 /* README.md in Resources */,
+				0324D8941649A48800ED99D8 /* README.md in Resources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
