@@ -10,4 +10,9 @@
 
 @interface ETViewController : UIViewController
 
+@property (weak,nonatomic) IBOutlet UILabel *usernameLabel;
+@property (weak,nonatomic) IBOutlet UILabel *countryLabel;
+
+- (IBAction)parseXML:(id)sender;
+
 @end

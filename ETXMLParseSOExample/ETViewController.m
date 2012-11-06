@@ -7,6 +7,12 @@
 //
 
 #import "ETViewController.h"
+#import "ETLoginInfoXMLParser.h"
+#import "ETLoginInfo.h"
+
+@interface ETViewController ()
+@property (copy,nonatomic) NSString *xmlResponse;
+@end
 
 @interface ETViewController ()
 
@@ -14,16 +20,23 @@
 
 @implementation ETViewController
 
-- (void)viewDidLoad
-{
+- (void)viewDidLoad {
     [super viewDidLoad];
-	// Do any additional setup after loading the view, typically from a nib.
+    
+    NSString *filePath = [[NSBundle mainBundle] pathForResource:@"login_response" ofType:@"xml"];
+    
+    if (filePath) {
+        self.xmlResponse = [NSString stringWithContentsOfFile:filePath encoding:NSUTF8StringEncoding error:nil];
+    }
 }
 
-- (void)didReceiveMemoryWarning
-{
-    [super didReceiveMemoryWarning];
-    // Dispose of any resources that can be recreated.
+- (IBAction)parseXML:(id)sender {
+    if (self.xmlResponse) {
+        ETLoginInfo *loginInfo = [ETLoginInfoXMLParser parseXMLLoginResponse:self.xmlResponse];
+        self.usernameLabel.text = loginInfo.username;
+        self.countryLabel.text = loginInfo.country;
+    }
 }
+
 
 @end
